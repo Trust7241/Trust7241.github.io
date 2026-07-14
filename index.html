@@ -1,113 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trust Edudje | Data Analyst</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            margin:0;
-            background:#f5f7fa;
-            color:#333;
-        }
+<title>Trust Edudje | Data Analyst</title>
 
-        header{
-            background:#1f4e79;
-            color:white;
-            text-align:center;
-            padding:60px 20px;
-        }
+<style>
 
-        section{
-            max-width:1000px;
-            margin:auto;
-            padding:40px 20px;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
 
-        h2{
-            color:#1f4e79;
-        }
+body{
+background:#f4f7fb;
+color:#333;
+line-height:1.6;
+}
 
-        .card{
-            background:white;
-            padding:20px;
-            margin:20px 0;
-            border-radius:10px;
-            box-shadow:0 3px 8px rgba(0,0,0,0.1);
-        }
+nav{
+background:#0A3D62;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 10%;
+position:sticky;
+top:0;
+}
 
-        footer{
-            background:#1f4e79;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
-    </style>
+nav h2{
+color:white;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.hero{
+background:#0A3D62;
+color:white;
+padding:90px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero h3{
+font-weight:normal;
+margin-bottom:25px;
+}
+
+.button{
+display:inline-block;
+background:white;
+color:#0A3D62;
+padding:12px 24px;
+margin:10px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.button:hover{
+background:#dfefff;
+}
+
+section{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:70px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:34px;
+color:#0A3D62;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.skills li{
+margin-bottom:10px;
+}
+
+footer{
+background:#0A3D62;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:60px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<header>
-    <h1>Trust Edudje</h1>
-    <h3>Data Analyst | Power BI | Excel | Healthcare & Business Analytics</h3>
-</header>
+<nav>
 
-<section>
+<h2>Trust Edudje</h2>
 
-<h2>About Me</h2>
+<div>
 
-<div class="card">
-<p>
-I am a First Class graduate in Pharmacology with a passion for transforming data into meaningful insights using Microsoft Power BI and Excel. I enjoy building interactive dashboards that help organizations make informed, data-driven decisions.
-</p>
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
 </div>
 
-<h2>Technical Skills</h2>
+</nav>
+
+<div class="hero">
+
+<h1>Trust Edudje</h1>
+
+<h3>Data Analyst | Power BI | Excel | Healthcare & Business Analytics</h3>
+
+<a class="button" href="https://github.com/Trust7241">GitHub</a>
+
+<a class="button" href="#">LinkedIn</a>
+
+</div>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
 
 <div class="card">
 
-<ul>
-<li>Microsoft Power BI</li>
+<p>
+
+I am a First Class graduate in Pharmacology with a passion for transforming data into meaningful insights using Microsoft Power BI and Excel. I enjoy building interactive dashboards that support data-driven decision-making across healthcare and business environments.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Analytics</h3>
+
+<ul class="skills">
+
+<li>Power BI</li>
+
 <li>Microsoft Excel</li>
+
 <li>Power Query</li>
+
 <li>DAX</li>
-<li>Data Cleaning</li>
-<li>Dashboard Development</li>
-<li>Data Visualization</li>
-<li>Business Intelligence</li>
+
 </ul>
 
 </div>
 
-<h2>Projects</h2>
-
 <div class="card">
-<h3>Healthcare Analytics Dashboard</h3>
 
-<p>
-Interactive dashboard analyzing patient demographics, hospital operations, financial performance and clinical outcomes.
-</p>
+<h3>Data Skills</h3>
+
+<ul class="skills">
+
+<li>Data Cleaning</li>
+
+<li>Dashboard Design</li>
+
+<li>Business Intelligence</li>
+
+<li>Data Visualization</li>
+
+</ul>
+
 </div>
 
 <div class="card">
-<h3>Sales Analytics Dashboard</h3>
 
-<p>
-Interactive dashboard analyzing sales trends, customer behavior, product performance and profitability.
-</p>
+<h3>Currently Learning</h3>
+
+<ul class="skills">
+
+<li>SQL</li>
+
+<li>Python</li>
+
+<li>Advanced Power BI</li>
+
+</ul>
+
 </div>
 
-<h2>Contact</h2>
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Featured Projects</h2>
+
+<div class="cards">
 
 <div class="card">
 
-<p>Email: youremail@email.com</p>
+<h3>🏥 Healthcare Analytics Dashboard</h3>
 
-<p>GitHub: https://github.com/Trust7241</p>
+<p>
 
-<p>LinkedIn: Coming Soon</p>
+Interactive Power BI dashboard analysing patient demographics, hospital operations, financial performance and clinical outcomes.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📈 Sales Analytics Dashboard</h3>
+
+<p>
+
+Interactive dashboard analysing revenue, sales trends, customer behaviour and product performance.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Education & Certification</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Education</h3>
+
+<p>B.Sc. Pharmacology (First Class)</p>
+
+</div>
+
+<div class="card">
+
+<h3>Certification</h3>
+
+<p>TechCrush Data Analytics Certificate</p>
+
+<p>Recognized by the American Council for Training and Development.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+
+<p><strong>GitHub:</strong> https://github.com/Trust7241</p>
+
+<p><strong>LinkedIn:</strong> Coming Soon</p>
+
+<p><strong>Email:</strong> Your professional email</p>
 
 </div>
 
@@ -115,9 +313,10 @@ Interactive dashboard analyzing sales trends, customer behavior, product perform
 
 <footer>
 
-© 2026 Trust Edudje
+<p>© 2026 Trust Edudje | Data Analyst Portfolio</p>
 
 </footer>
 
 </body>
+
 </html>
