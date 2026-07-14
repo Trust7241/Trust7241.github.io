@@ -1,1 +1,1043 @@
+/* ===================================================
+   GLOBAL STYLES
+=================================================== */
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#f6f9fc;
+
+color:#333;
+
+line-height:1.7;
+
+overflow-x:hidden;
+
+}
+
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+section{
+
+padding:100px 0;
+
+}
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+a{
+
+text-decoration:none;
+
+}
+
+ul{
+
+list-style:none;
+
+}
+
+.section-title{
+
+font-size:42px;
+
+font-weight:700;
+
+text-align:center;
+
+color:#0B4F6C;
+
+margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+text-align:center;
+
+color:#777;
+
+margin-bottom:60px;
+
+font-size:18px;
+
+}
+
+/* ===================================================
+   NAVIGATION
+=================================================== */
+
+.navbar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+padding:18px 8%;
+
+background:rgba(255,255,255,.92);
+
+backdrop-filter:blur(12px);
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+z-index:1000;
+
+box-shadow:0 6px 25px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+font-size:30px;
+
+font-weight:700;
+
+color:#0B4F6C;
+
+}
+
+.logo span{
+
+color:#2BAE66;
+
+}
+
+.nav-links{
+
+display:flex;
+
+gap:35px;
+
+}
+
+.nav-links a{
+
+font-size:16px;
+
+font-weight:500;
+
+color:#333;
+
+transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+color:#2BAE66;
+
+}
+
+.menu-toggle{
+
+display:none;
+
+font-size:30px;
+
+cursor:pointer;
+
+}
+
+/* ===================================================
+   HERO SECTION
+=================================================== */
+
+.hero{
+
+min-height:100vh;
+
+background:linear-gradient(135deg,#0B4F6C,#1F7A8C);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:120px 8%;
+
+color:white;
+
+}
+
+.hero-content{
+
+max-width:900px;
+
+animation:fadeUp 1s ease;
+
+}
+
+.hero h3{
+
+font-size:24px;
+
+font-weight:400;
+
+margin-bottom:15px;
+
+}
+
+.hero h1{
+
+font-size:72px;
+
+font-weight:800;
+
+margin-bottom:20px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+
+font-weight:500;
+
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:19px;
+
+line-height:1.9;
+
+margin-bottom:45px;
+
+opacity:.95;
+
+}
+
+/* ===================================================
+   BUTTONS
+=================================================== */
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.primary-btn{
+
+background:white;
+
+color:#0B4F6C;
+
+padding:16px 38px;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.35s;
+
+box-shadow:0 15px 30px rgba(0,0,0,.18);
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-6px);
+
+background:#2BAE66;
+
+color:white;
+
+}
+
+.secondary-btn{
+
+padding:16px 38px;
+
+border:2px solid white;
+
+color:white;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.secondary-btn:hover{
+
+background:white;
+
+color:#0B4F6C;
+
+transform:translateY(-6px);
+
+}
+
+/* ===================================================
+   PORTFOLIO HIGHLIGHTS
+=================================================== */
+
+.highlights{
+
+background:#f4f8fb;
+
+}
+
+.stats-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+gap:30px;
+
+}
+
+.stat-card{
+
+background:white;
+
+padding:45px 25px;
+
+border-radius:18px;
+
+text-align:center;
+
+transition:.35s;
+
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.stat-card h1{
+
+font-size:55px;
+
+color:#2BAE66;
+
+margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+font-size:18px;
+
+color:#555;
+
+}
+
+/* ===================================================
+   ABOUT
+=================================================== */
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:1.4fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.about-text p{
+
+font-size:18px;
+
+margin-bottom:25px;
+
+color:#555;
+
+}
+
+.about-card{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.about-card h3{
+
+font-size:28px;
+
+color:#0B4F6C;
+
+margin-bottom:25px;
+
+}
+
+.about-card ul li{
+
+margin-bottom:18px;
+
+font-size:17px;
+
+}
+
+/* ===================================================
+   ANIMATION
+=================================================== */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+/* ===================================================
+   SKILLS SECTION
+=================================================== */
+
+.skills-section{
+
+background:white;
+
+}
+
+.skills-grid{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:18px;
+
+}
+
+.skill-card{
+
+padding:14px 28px;
+
+background:#0B4F6C;
+
+color:white;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.35s;
+
+cursor:default;
+
+box-shadow:0 8px 18px rgba(0,0,0,.12);
+
+}
+
+.skill-card:hover{
+
+background:#2BAE66;
+
+transform:translateY(-6px);
+
+}
+
+/* ===================================================
+   PROJECTS
+=================================================== */
+
+#projects{
+
+background:#f4f8fb;
+
+}
+
+.project-card{
+
+background:white;
+
+border-radius:22px;
+
+padding:50px;
+
+margin-bottom:70px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.project-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.project-text{
+
+margin-bottom:35px;
+
+}
+
+.project-text h2{
+
+font-size:34px;
+
+color:#0B4F6C;
+
+margin-bottom:18px;
+
+}
+
+.project-text p{
+
+font-size:18px;
+
+color:#555;
+
+margin-bottom:30px;
+
+line-height:1.9;
+
+}
+
+/* ===================================================
+   TECHNOLOGY TAGS
+=================================================== */
+
+.project-tags{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+margin-bottom:35px;
+
+}
+
+.project-tags span{
+
+background:#E9F5F7;
+
+color:#0B4F6C;
+
+padding:10px 18px;
+
+border-radius:30px;
+
+font-weight:600;
+
+font-size:15px;
+
+transition:.3s;
+
+}
+
+.project-tags span:hover{
+
+background:#2BAE66;
+
+color:white;
+
+}
+
+/* ===================================================
+   PROJECT BUTTON
+=================================================== */
+
+.project-button{
+
+display:inline-block;
+
+padding:15px 34px;
+
+background:#0B4F6C;
+
+color:white;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.project-button:hover{
+
+background:#2BAE66;
+
+transform:translateY(-5px);
+
+}
+
+/* ===================================================
+   HEALTHCARE GALLERY
+=================================================== */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:28px;
+
+margin-top:40px;
+
+}
+
+.gallery-item{
+
+background:#fff;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.gallery-item:hover{
+
+transform:translateY(-10px);
+
+}
+
+.gallery-item img{
+
+width:100%;
+
+height:230px;
+
+object-fit:cover;
+
+}
+
+.gallery-item h4{
+
+font-size:22px;
+
+padding:20px 20px 8px;
+
+color:#0B4F6C;
+
+}
+
+.gallery-item p{
+
+padding:0 20px 24px;
+
+font-size:16px;
+
+color:#666;
+
+line-height:1.7;
+
+}
+
+/* ===================================================
+   SALES DASHBOARD IMAGE
+=================================================== */
+
+.sales-image{
+
+margin-top:40px;
+
+text-align:center;
+
+}
+
+.sales-image img{
+
+width:100%;
+
+max-width:900px;
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+transition:.4s;
+
+}
+
+.sales-image img:hover{
+
+transform:scale(1.02);
+
+}
+
+/* ===================================================
+   PROJECT ANIMATION
+=================================================== */
+
+.project-card{
+
+animation:fadeUp 1s ease;
+
+}
+/* ===================================================
+   EDUCATION
+=================================================== */
+
+#education{
+background:white;
+}
+
+.education-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:35px;
+margin-top:50px;
+}
+
+.education-card{
+background:#f8fbfd;
+padding:40px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+transition:.35s;
+}
+
+.education-card:hover{
+transform:translateY(-10px);
+}
+
+.education-card h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.education-card h3{
+font-size:28px;
+color:#0B4F6C;
+margin-bottom:10px;
+}
+
+.education-card h4{
+font-size:20px;
+color:#2BAE66;
+margin-bottom:20px;
+}
+
+.education-card p{
+color:#666;
+line-height:1.8;
+}
+
+/* ===================================================
+   TIMELINE
+=================================================== */
+
+.timeline-section{
+background:#f4f8fb;
+}
+
+.timeline{
+position:relative;
+max-width:900px;
+margin:auto;
+}
+
+.timeline::before{
+content:"";
+position:absolute;
+left:50%;
+width:4px;
+height:100%;
+background:#2BAE66;
+transform:translateX(-50%);
+}
+
+.timeline-item{
+position:relative;
+width:50%;
+padding:25px 40px;
+}
+
+.timeline-item:nth-child(odd){
+left:0;
+text-align:right;
+}
+
+.timeline-item:nth-child(even){
+left:50%;
+}
+
+.timeline-content{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.timeline-year{
+font-size:24px;
+font-weight:bold;
+color:#2BAE66;
+margin-bottom:10px;
+}
+
+/* ===================================================
+   CONTACT
+=================================================== */
+
+#contact{
+background:white;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.contact-card{
+background:#f8fbfd;
+padding:35px;
+text-align:center;
+border-radius:18px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+transition:.35s;
+}
+
+.contact-card:hover{
+transform:translateY(-8px);
+}
+
+.contact-card h2{
+font-size:45px;
+margin-bottom:15px;
+}
+
+.contact-card h3{
+color:#0B4F6C;
+margin-bottom:12px;
+}
+
+.contact-card p,
+.contact-card a{
+color:#555;
+font-size:17px;
+word-break:break-word;
+}
+
+.contact-card a:hover{
+color:#2BAE66;
+}
+
+/* ===================================================
+   BACK TO TOP
+=================================================== */
+
+#topBtn{
+position:fixed;
+bottom:30px;
+right:30px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#0B4F6C;
+color:white;
+font-size:22px;
+cursor:pointer;
+display:none;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+transition:.3s;
+z-index:999;
+}
+
+#topBtn:hover{
+background:#2BAE66;
+}
+
+/* ===================================================
+   FOOTER
+=================================================== */
+
+footer{
+background:#0B4F6C;
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+footer h2{
+font-size:32px;
+margin-bottom:15px;
+}
+
+footer p{
+opacity:.9;
+margin-bottom:10px;
+}
+
+/* ===================================================
+   RESPONSIVE DESIGN
+=================================================== */
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:48px;
+}
+
+.hero h2{
+font-size:22px;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.timeline::before{
+left:20px;
+}
+
+.timeline-item{
+width:100%;
+left:0!important;
+padding-left:60px;
+padding-right:20px;
+text-align:left!important;
+}
+
+.nav-links{
+display:none;
+}
+
+.menu-toggle{
+display:block;
+color:#0B4F6C;
+}
+
+.section-title{
+font-size:34px;
+}
+
+.project-card{
+padding:30px;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.education-grid{
+grid-template-columns:1fr;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.hero-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.primary-btn,
+.secondary-btn{
+width:250px;
+text-align:center;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero h2{
+font-size:20px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.section-title{
+font-size:30px;
+}
+
+.logo{
+font-size:24px;
+}
+
+}
