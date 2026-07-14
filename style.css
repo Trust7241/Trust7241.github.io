@@ -1175,3 +1175,74 @@ font-size:24px;
     color:#475569;
     line-height:1.7;
 }
+/* ============================
+   CERTIFICATIONS
+============================ */
+
+.certifications{
+    padding:100px 10%;
+    background:#ffffff;
+}
+
+.certification-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.certification-card{
+    background:#f8fafc;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.35s ease;
+    border-top:5px solid #2563eb;
+}
+
+.certification-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,0.15);
+}
+
+.certification-card h3{
+    color:#0f172a;
+    margin-bottom:20px;
+    font-size:1.4rem;
+}
+
+.certification-card p{
+    color:#475569;
+    line-height:1.8;
+    margin-bottom:12px;
+}
+
+.certificate-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 24px;
+
+    background:#2563eb;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+}
+
+.certificate-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
