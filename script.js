@@ -157,3 +157,42 @@ if (footerParagraphs.length > 2) {
         "© " + new Date().getFullYear() + " Trust Edudje. All Rights Reserved.";
 
 }
+// ===========================
+// Animated Achievement Counters
+// ===========================
+
+const counters = document.querySelectorAll(".counter");
+
+const animateCounters = () => {
+    counters.forEach(counter => {
+
+        const target = +counter.getAttribute("data-target");
+
+        let count = 0;
+
+        const increment = target / 80;
+
+        const updateCounter = () => {
+
+            if (count < target) {
+
+                count += increment;
+
+                counter.innerText = Math.ceil(count);
+
+                requestAnimationFrame(updateCounter);
+
+            } else {
+
+                counter.innerText = target;
+
+            }
+
+        };
+
+        updateCounter();
+
+    });
+};
+
+window.addEventListener("load", animateCounters);
