@@ -196,3 +196,43 @@ const animateCounters = () => {
 };
 
 window.addEventListener("load", animateCounters);
+// ===========================
+// Dashboard Lightbox
+// ===========================
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeLightbox = document.querySelector(".close-lightbox");
+const galleryImages = document.querySelectorAll(".lightbox-image");
+
+// Open lightbox
+galleryImages.forEach((image) => {
+    image.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = image.src;
+        lightboxImg.alt = image.alt;
+        document.body.style.overflow = "hidden";
+    });
+});
+
+// Close using × button
+closeLightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+    document.body.style.overflow = "auto";
+});
+
+// Close by clicking outside the image
+lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+});
+
+// Close with Escape key
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        lightbox.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+});
